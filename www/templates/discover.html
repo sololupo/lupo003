@@ -1,0 +1,38 @@
+<ion-view view-title="Discover" class="discover-page">
+  <ion-content scroll="false">
+
+
+    <ion-list class="card current-song"
+      ng-class="{skipped: currentSong.rated -- false,
+                favorited: currentSong.rated -- true}"
+      ng-show="currentSong && !currentSong.hide">
+
+      <ion-item class="item-image">
+        <img ng-src="{{ currentSong.image_large }}">
+      </ion-item>
+
+      <ion-item>
+        <h2>{{ currentSong.title }}</h2>
+        <p>{{ currentSong.artist }}</p>
+      </ion-item>
+
+      <ion-item class="tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" ng-click="sendFeedback(false)">
+          <i class="icon ion-close"></i>
+          Skip
+        </a>
+        <a class="tab-item" ng-click="sendFeedback(true)">
+          <i class="icon ion-heart"></i>
+          Favorite
+        </a>
+      </ion-item>
+
+    </ion-list>
+
+  <!-- Caching of next image in the queue -->
+  <div class="img-lookahead">
+    <img ng-src="{{ nextAlbumImg() }}" />
+  </div>
+
+  </ion-content>
+</ion-view>
