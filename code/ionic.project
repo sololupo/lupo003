@@ -1,4 +1,12 @@
 {
-  "name": "songhop",
-  "app_id": ""
+  "name": "lupo",
+  "app_id": "a9413da3",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

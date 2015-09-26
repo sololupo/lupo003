@@ -1,26 +1,29 @@
 /* Splash page stylings */
 .splash-page {
-  background:url(/img/splash-bkg.jpg);
+  background:#E8EAF6;
   background-size: cover;
   background-repeat: no-repeat;
+  color:#1A237E !important;
 }
 
 .splash-page .card {
   margin-top:40px;
+  background:#C5CAE9;
+
 }
 
 .splash-page .logo h1 {
   margin-top:30px;
   text-align:center;
-  color:#fff !important;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight:bold;
-  letter-spacing: -3px;
+  color:#1A237E !important;
+  font-family: Tumbly, Dosis, sans-serif;
+  font-weight:200;
+  letter-spacing: 3px;
   font-size:42px;
 }
 
 .splash-page .signup-opt {
-  color:#fff;
+  color:#000;
   padding:15px;
   margin-top:20px;
   font-weight: bold;
@@ -29,6 +32,7 @@
 
 .splash-page .action-button {
   font-weight: bolder;
+  background-color:#1565C0 !important;
 }
 
 /* Discover page stylings */
@@ -59,16 +63,16 @@
 }
 
 .discover-page .current-song.favorited.ng-hide {
-  -webkit-transform: translateX(1000px) rotate(50deg);
-  -ms-transform: translateX(1000px) rotate(50deg);
-  transform: translateX(1000px) rotate(50deg);
+  -webkit-transform: translateX(-1000px) rotate(-50deg);
+  -ms-transform: translateX(-1000px) rotate(-50deg);
+  transform: translateX(-1000px) rotate(-50deg);
   opacity:0;
 }
 
 .discover-page .current-song.skipped.ng-hide {
-  -webkit-transform: translateX(-1000px) rotate(-50deg);
-  -ms-transform: translateX(-1000px) rotate(-50deg);
-  transform: translateX(-1000px) rotate(-50deg);
+  -webkit-transform: translateX(1000px) rotate(50deg);
+  -ms-transform: translateX(1000px) rotate(50deg);
+  transform: translateX(1000px) rotate(50deg);
   opacity:0;
 }
 
@@ -91,3 +95,4 @@
   width:1px;
   opacity:0.01;
 }
+

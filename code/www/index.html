@@ -5,15 +5,49 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
 
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!-- IONIC MATERIAL CSS -->
+    <link href="lib/ionic-material/dist/ionic.material.min.css" rel="stylesheet">
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- keep my custom css -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- IONIC MATERIAL JS -->
+    <script src="lib/ionic-material/dist/ionic.material.min.js"></script>
+
+    <!-- tinder cards js -->
+    <script src="http://code.ionicframework.com/contrib/ionic-contrib-tinder-cards/ionic.tdcards.js"></script>
+
+    <!-- tinder cards css -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/contrib/ionic-contrib-tinder-cards/ionic.tdcards.css">
+
+
+    <!-- Dosis font -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis%3A400%2C300%2C500%2C700" rel="stylesheet" type="text/css">
+    <!-- Tumbly font -->
+    <script type="text/javascript">
+      (function() {
+          var path = '//easy.myfonts.net/v2/js?sid=197656(font-family=Tumbly)&key=bMaiDVXo9U',
+              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+              trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = protocol + path;
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+          head.removeChild(trial);
+      })();
+    </script>
+
+    <!-- RobotoDraft Font for Ionic-Material -->
+    <link href="https://fonts.googleapis.com/css?family=RobotoDraft%3A400%2C500%2C700%2C400italic" rel="stylesheet" type="text/css">
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -23,8 +57,13 @@
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
     <script src="js/utils.js"></script>
+
+
+    <!-- collide for tinder cards -->
+    <script src="http://code.ionicframework.com/collide/0.0.4/collide.js"></script>
+
   </head>
-  <body ng-app="songhop">
+  <body ng-app="lupo">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
